@@ -9,6 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Example_Collection">
+        <activity android:name=".RecycleView.RecycleViewActivity"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".Basic.IntentActivitySub"
+            android:parentActivityName=".Basic.IntentActivity" />
+        <activity
+            android:name=".Basic.IntentActivity"
+            android:parentActivityName=".MainActivity" /> <!-- 添加向上导航功能 -->
+        <activity
+            android:name=".Basic.ButtonActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ListView.ListViewActivity"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
